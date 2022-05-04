@@ -5,7 +5,7 @@
     font-family: 'Source Sans Pro', sans-serif;
     font-style: none;
     text-decoration: none;
-    background-image: url(Imagenes/Fondo1.jpg); 
+    background-image: url(../Imagenes/Fondo1.jpg); 
 }
 .lista{
     text-align: center;
@@ -14,18 +14,27 @@ a{
     color: red;
     
 }
+body {
+    text-align: center;
+}
+form {
+    display: inline-block;
+}
 .div-main{
     text-align: center;
     color: azure;
 }
+.border{
+    margin-left: auto;
+    margin-right: auto;
+}
 .texto{
     border: 1px solid black;
 }
-
-/* .gradiante{
-    background-image: linear-gradient(red, yellow);
-} */
-
+.footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
 .shop{
     height: 100px;
     text-align: center;
@@ -35,9 +44,7 @@ a{
     animation-timing-function: ease-in;
     animation-duration: 2s;
     animation-delay: 5s;
-
 }
-
 @keyframes efecto {
     0%{ width: 100%; }
     50%{width: 0%;}
