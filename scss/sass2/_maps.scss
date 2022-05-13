@@ -1,0 +1,13 @@
+@import "../variables/variables";
+
+$navegacion:(
+    color: $blue,
+    centro: $alinear-al-centro,
+    fSize: $size,
+    ancho: 100%,
+);
+
+h1{
+    color: $red;
+    width: map-get($navegacion, ancho);
+}

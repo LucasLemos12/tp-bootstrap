@@ -1,21 +1,23 @@
 @import "partials/headers";
 @import "partials/footer";
+@import "partials/section";
+@import "sass2/condicionales";
+@import "sass2/extend";
+@import "sass2/maps";
+@import "sass2/mixins";
+@import "sass2/operaciones";
+@import "variables/variables";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: none;
-    text-decoration: none;
-    background-image: url(../Imagenes/Fondo1.jpg); 
+    @include todo;
 }
 .lista{
     text-align: center;
 }
 a{
-    color: red;   
+    color: $red;
 }
 body {
     text-align: center;
@@ -35,7 +37,7 @@ form {
     border: 1px solid black;
 }
 .shop{
-    height: 100px;
+    height: $height;
     text-align: center;
     color: greenyellow;
     animation-name: efecto;
