@@ -10,9 +10,33 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+form {
+    display: inline-block;
+    @include form
+}
 *{
     @include todo;
 }
+
+nav{
+    background: #217E90;
+    height: 80px;
+    width: 100%;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    float: left;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
 .lista{
     text-align: center;
 }
@@ -20,11 +44,40 @@ a{
     color: $red;
 }
 body {
+    min-height: 100vh;
     text-align: center;
+    position: relative;
+    padding-bottom: 2em;
+    @include fondo
 }
 form {
     display: inline-block;
+    @include form
 }
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: none;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+@media(max-width: 480px){
+    form{
+        width: 100%;
+    }
+}
+
+.coment{
+    @include titulo
+}
+
 .div-main{
     text-align: center;
     color: azure;
@@ -59,4 +112,7 @@ form {
 }
 .nav-link:active{
     color: violet;
+}
+
+.footer{
 }

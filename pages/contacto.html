@@ -13,6 +13,7 @@
 <body>
     <header>
         <nav>
+            <label class="logo">SportY</label>
             <ul class="nav nav-tabs justify-content-center">
                 <li class="nav-item">
                     <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
@@ -34,25 +35,17 @@
     </header>
     <main>
         <div class="form">
-            <form action="ejemplo" >
-                <p>Nombre y Apellido: 
-                    <input type="text" name="nombre" size="40">
+            <form action="formulario" >
+                <h2 class="coment">Contactos</h2>
+                    <input type="text" name="nombre" placeholder="Nombre" size="40">
+                    <input type="text" name="apellido" placeholder="Apellido" size="40">
+                    <input type="text" name="telefono" placeholder="Telefono" size="40">
                 </p>
-                <p>Sexo: 
-                    <select name="Sexo" >
-                        <option value="Seleccionar">Seleccionar</option>
-                        <option value="Mujer">Mujer</option>
-                        <option value="Hombre">Hombre</option>
-                    </select>
-                </p>
-                <p>Acepta los terminos y condiciones?
-                    <input type="checkbox" value="Condiciones">
-                </p>
-                    <h3>Comentario</h3>
+                    <h2 class="coment">Comentario</h2>
                 <p>
                     <textarea name="comentario"  cols="50%" rows="10%" placeholder="Escriba su comentario" ></textarea>
-                </p>
-                <p>
+                <p>Acepta los terminos y condiciones?
+                    <input type="checkbox" value="Condiciones">
                     <input type="submit" value="Enviar">
                     <input type="reset" value="Borrar">
                 </p>
@@ -61,7 +54,6 @@
     </main>
     <footer>
         <div class="footer">
-            <h2>Contactos</h2>
             <div class="shadow-none p-3 mb-5 bg-light rounded">Teléfono: +54(011) 38238476</div>
             <div class="shadow-sm p-3 mb-5 bg-body rounded">Av. Siempre Viva 742</div>
             <div class="shadow p-3 mb-5 bg-body rounded">Argentina, Buenos Aires</div>
